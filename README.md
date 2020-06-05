@@ -1,10 +1,10 @@
-# Shopify Storefront GraphQL API as an SDL
+# Shopify Storefront GraphQL SDL
 
 This is an SDL representation of [Shopify's Storefront API](https://shopify.dev/docs/storefront-api).
 
 ## How to construct / update
 
-1. Run [this introspection query](https://community.shopify.com/c/Shopify-APIs-SDKs/Possible-to-import-Shopify-s-GraphQL-Schema-SDL-into-Postman/m-p/574265/highlight/true#M38432) in [Storefront's GraphiQL](https://shopify.dev/tools/graphiql-storefront-api).
+1. Run [this introspection query](https://community.shopify.com/c/Shopify-APIs-SDKs/Possible-to-import-Shopify-s-GraphQL-Schema-SDL-into-Postman/m-p/574265/highlight/true#M38432) in [Storefront's GraphiQL](https://shopify.dev/tools/graphiql-storefront-api)
 2. Save the result to `temp.json`
 3. Run `npx graphql-introspection-json-to-sdl temp.json > shopify-storefront.graphql`
 
